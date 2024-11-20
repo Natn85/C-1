@@ -7,16 +7,12 @@ float lerp_precise(int k0, int k1, float t) { return (1 - t) * k0 + t * k1; }
 
 int main()
 {
-    float start = 0;
-    float finish = 5;
-    float steps = 0;
+    float finish, steps, start = 0;
 
-    printf("Input a number, this is the bigger bound of the lerp:\n");
+    printf("Input a number, this is the bigger bound of the lerp:");
     scanf("%f", &finish);
 
-    printf(
-        "Input a number, this is in how many steps you want to divide the "
-        "lerp:\n");
+    printf("Input a number, this is in how many steps you want to divide the lerp:");
     scanf("%f", &steps);
 
     for (int i = 0; i < steps + 1; i++)
