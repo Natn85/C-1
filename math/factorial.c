@@ -10,7 +10,7 @@ int main()
         printf("Cannot Calculate factorials for negative numbers.");
     else
     {
-        for (; n >= 2; n--)
+        for (n; n >= 2; n--)
         {
             temp = 0;
             for (i = 0; i <= counter; i++)
